@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2A50F02C2F6A41001C099C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E2A50EF2C2F6A41001C099C /* Pacifico-Regular.ttf */; };
 		1E2C736D2C2E2F960036F44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C736C2C2E2F960036F44E /* AppDelegate.swift */; };
 		1E2C736F2C2E2F960036F44E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C736E2C2E2F960036F44E /* SceneDelegate.swift */; };
 		1E2C73712C2E2F960036F44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2C73702C2E2F960036F44E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2A50EF2C2F6A41001C099C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		1E2C73692C2E2F960036F44E /* IOS APP Learning Documents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS APP Learning Documents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2C736C2C2E2F960036F44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2C736E2C2E2F960036F44E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2A50EE2C2F69E4001C099C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1E2C73602C2E2F960036F44E = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +68,8 @@
 				1E2C736C2C2E2F960036F44E /* AppDelegate.swift */,
 				1E2C736E2C2E2F960036F44E /* SceneDelegate.swift */,
 				1E2C73702C2E2F960036F44E /* ViewController.swift */,
+				1E2A50EE2C2F69E4001C099C /* Fonts */,
+				1E2A50EF2C2F6A41001C099C /* Pacifico-Regular.ttf */,
 				1E2C73722C2E2F960036F44E /* Main.storyboard */,
 				1E2C73752C2E2F970036F44E /* Assets.xcassets */,
 				1E2C73772C2E2F970036F44E /* LaunchScreen.storyboard */,
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2C73762C2E2F970036F44E /* Assets.xcassets in Resources */,
+				1E2A50F02C2F6A41001C099C /* Pacifico-Regular.ttf in Resources */,
 				1E2C73792C2E2F970036F44E /* Base in Resources */,
 				1E2C73742C2E2F960036F44E /* Base in Resources */,
 			);

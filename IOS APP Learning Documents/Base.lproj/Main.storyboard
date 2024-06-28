@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ooP-L5-b2g">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,10 +14,74 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_APP_Learning_Documents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef Cheese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkV-YM-0nR">
+                                <rect key="frame" x="109.00000000000001" y="139" width="212.33333333333337" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" name="MainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yemek_resim" translatesAutoresizingMaskIntoConstraints="NO" id="d6Q-YD-d0D">
+                                <rect key="frame" x="95" y="190" width="240" height="166.66666666666663"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XiL-F5-Mhq">
+                                <rect key="frame" x="91.666666666666686" y="382" width="247" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kv-UB-g1S">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="28"/>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cheese">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afC-lN-cAU">
+                                        <rect key="frame" x="87.666666666666657" y="0.0" width="71.666666666666657" height="28"/>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sausage">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-0W-atJ">
+                                        <rect key="frame" x="175.33333333333331" y="0.0" width="71.666666666666686" height="28"/>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pepper">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AkV-YM-0nR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="6F1-fi-cof"/>
+                            <constraint firstItem="AkV-YM-0nR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="Iia-qP-aus"/>
+                            <constraint firstItem="XiL-F5-Mhq" firstAttribute="top" secondItem="AkV-YM-0nR" secondAttribute="bottom" constant="200" id="Y0L-Yg-Jpc"/>
+                            <constraint firstItem="d6Q-YD-d0D" firstAttribute="top" secondItem="AkV-YM-0nR" secondAttribute="bottom" constant="8" symbolic="YES" id="bzU-Oc-nQI"/>
+                            <constraint firstItem="d6Q-YD-d0D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hA4-93-NDi"/>
+                            <constraint firstItem="XiL-F5-Mhq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibB-vK-f3s"/>
+                            <constraint firstItem="d6Q-YD-d0D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="mbe-cv-PXc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="RQt-uO-Q3O"/>
                 </viewController>
@@ -30,7 +95,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ooP-L5-b2g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yky-5g-b4A">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -44,6 +109,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="yemek_resim" width="166.66667175292969" height="166.66667175292969"/>
+        <namedColor name="MainColor">
+            <color red="0.94901960784313721" green="0.26666666666666666" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor1">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
